@@ -32,4 +32,4 @@ string[] NewText(string[] arr)
 
 string[] arr1 = Text(length);
 PrintArray(arr1);
-string[] result = NewText(arr1);
+NewText(arr1);
