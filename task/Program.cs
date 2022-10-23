@@ -1,4 +1,6 @@
-﻿string[] text(int length)
+﻿int length = 5;
+
+string[] Text(int length)
 {
     string[] arr = new string[] { "hello", "2", "the", "world", ":-)" };
 
@@ -17,15 +19,17 @@ void PrintArray(string[] arr)
 
 string[] NewText(string[] arr)
 {
+    string[] newArr = new string[length];
     for (int i = 0; i < arr.Length; i++)
     {
         if (arr[i].Length <= 3)
-            Console.Write($"{arr[i]} ");
+        newArr[i] = arr[i];
+        Console.Write($"{newArr[i]} ");
     }
 
-    return arr;
+    return newArr;
 }
 
-string[] arr1 = text(5);
+string[] arr1 = Text(length);
 PrintArray(arr1);
 string[] result = NewText(arr1);
